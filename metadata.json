@@ -1,0 +1,8 @@
+{
+  "name": "ContaSoftware-2TB",
+  "description": "Sistema integral de contabilidad profesional y auditoría fiscal para contadores. Gestión multicliente desde cero: control de entradas, salidas, depósitos, compras de empresa, deudas, pasivos y gastos fiscales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

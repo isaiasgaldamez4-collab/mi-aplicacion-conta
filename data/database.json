@@ -1,0 +1,694 @@
+{
+  "users": [
+    {
+      "id": "acc_01",
+      "email": "isaiasdejesusguzman53@gmail.com",
+      "name": "C.P. Isaías de Jesús Guzmán",
+      "passwordHash": "$2b$10$LLZ.FaN/ugQGyhCWUnrE0u8N2saPY.ScWacFlxJLHnEbzsoVTgUp.",
+      "licenseNumber": "CP-8492015-DGP",
+      "firmName": "Guzmán & Asociados Consultoría Contable S.C.",
+      "collegeFolio": "CCPM-2024-8842",
+      "phone": "+52 (55) 8492-3320",
+      "specialty": "Auditoría Fiscal & Estrategia Financiera",
+      "avatarUrl": "/src/assets/images/avatar_accountant_1790392054567.jpg",
+      "createdAt": "2026-01-15T09:00:00.000Z",
+      "lastLogin": "2026-09-25T19:30:00.000Z",
+      "preferences": {
+        "darkMode": true,
+        "autoAlerts": true,
+        "currency": "MXN",
+        "fiscalCountry": "México (SAT)"
+      }
+    },
+    {
+      "id": "acc_1790393260803_x6hio",
+      "email": "isaiasgaldamez4@gmail.com",
+      "name": "Jose Alberto Villanueva Ruso",
+      "passwordHash": "$2b$10$eFnujYsoGE89f9SLBYeQ3Od05DMs1TDVYFLdXe.DmrWcFM2icc3ci",
+      "licenseNumber": "cp-45398756",
+      "firmName": "Despacho Guzman",
+      "collegeFolio": "COL-4675",
+      "phone": "+52 (55) 0000-0000",
+      "specialty": "Contabilidad General & Fiscal",
+      "avatarUrl": "/src/assets/images/avatar_accountant_1790392054567.jpg",
+      "createdAt": "2026-09-26T03:27:40.804Z",
+      "lastLogin": "2026-09-26T03:27:40.804Z",
+      "preferences": {
+        "darkMode": true,
+        "autoAlerts": true,
+        "currency": "MXN",
+        "fiscalCountry": "México"
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "token": "csuite_1790393260804_o6oxy4rpt3",
+      "accountantId": "acc_1790393260803_x6hio",
+      "activeClientId": "cli_1790393547369_j9wm",
+      "activeTab": "dashboard",
+      "createdAt": "2026-09-26T03:27:40.804Z",
+      "lastActivity": "2026-09-26T03:32:27.432Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cli_01",
+      "accountantId": "acc_01",
+      "code": "CLI-101",
+      "businessName": "Innovaciones Industriales del Norte S.A. de C.V.",
+      "commercialName": "InduNorte Tech",
+      "rfc": "IIN190422K98",
+      "taxRegime": "601 - General de Ley Personas Morales",
+      "email": "finanzas@indunorte.com.mx",
+      "phone": "+52 81 8320 9044",
+      "address": "Av. Fundidora 501, Col. Obrera, Monterrey, N.L.",
+      "status": "Activo",
+      "fiscalYear": 2026,
+      "currentPeriod": "Septiembre 2026",
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "cli_02",
+      "accountantId": "acc_01",
+      "code": "CLI-102",
+      "businessName": "Distribuidora Logística del Pacífico S. de R.L. de C.V.",
+      "commercialName": "Pacífico Cargo",
+      "rfc": "DLP210815RA3",
+      "taxRegime": "601 - General de Ley Personas Morales",
+      "email": "contabilidad@pacificocargo.com",
+      "phone": "+52 33 3612 8840",
+      "address": "Calzada Las Palmas 120, Guadalajara, Jal.",
+      "status": "Activo",
+      "fiscalYear": 2026,
+      "currentPeriod": "Septiembre 2026",
+      "createdAt": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "cli_03",
+      "accountantId": "acc_01",
+      "code": "CLI-103",
+      "businessName": "Consultoría en Soluciones Digitales Horizonte S.A.",
+      "commercialName": "Horizonte Digital",
+      "rfc": "CSD230510T89",
+      "taxRegime": "626 - Régimen Simplificado de Confianza (RESICO)",
+      "email": "contacto@horizontedigital.io",
+      "phone": "+52 55 5280 4411",
+      "address": "Insurgentes Sur 1602, Crédito Constructor, CDMX",
+      "status": "Activo",
+      "fiscalYear": 2026,
+      "currentPeriod": "Septiembre 2026",
+      "createdAt": "2026-05-18T14:30:00.000Z"
+    },
+    {
+      "id": "cli_1790393260804",
+      "accountantId": "acc_1790393260803_x6hio",
+      "code": "CLI-001",
+      "businessName": "Jose Soluciones Integrales S.A. de C.V.",
+      "commercialName": "Mi Primer Cliente Demo",
+      "rfc": "ABC240101XYZ",
+      "taxRegime": "601 - General de Ley Personas Morales",
+      "email": "isaiasgaldamez4@gmail.com",
+      "phone": "+52 55 1234 5678",
+      "address": "Paseo de la Reforma 405, CDMX",
+      "status": "Activo",
+      "fiscalYear": 2026,
+      "currentPeriod": "Septiembre 2026",
+      "createdAt": "2026-09-26T03:27:40.804Z"
+    },
+    {
+      "code": "CLI-142",
+      "businessName": "NovaTech Solutions S.A. de C.V.",
+      "commercialName": "NovaTech",
+      "rfc": "NTS150824ABC",
+      "taxRegime": "601 - General de Ley Personas Morales",
+      "email": "isaiasdejesusguzman53@gmail.com",
+      "phone": "+503 78345962",
+      "address": "Av. Insurgentes Sur 123, Col. Centro, C.P. 06000, SV",
+      "status": "Activo",
+      "fiscalYear": 2026,
+      "currentPeriod": "Septiembre 2026",
+      "id": "cli_1790393547369_j9wm",
+      "accountantId": "acc_1790393260803_x6hio",
+      "createdAt": "2026-09-26T03:32:27.369Z"
+    }
+  ],
+  "polizas": [
+    {
+      "id": "pol_01",
+      "clientId": "cli_01",
+      "number": "PD-2026-0901",
+      "date": "2026-09-02",
+      "type": "Ingreso",
+      "concept": "Cobro de factura F-1082 por servicios de ingeniería industrial",
+      "entries": [
+        {
+          "id": "pe_1",
+          "accountCode": "1102-01",
+          "accountName": "Bancos Nacionales (BBVA)",
+          "concept": "Depósito SPEI BBVA",
+          "debe": 464000,
+          "haber": 0
+        },
+        {
+          "id": "pe_2",
+          "accountCode": "1105-01",
+          "accountName": "Clientes Nacionales",
+          "concept": "Liquidación saldo F-1082",
+          "debe": 0,
+          "haber": 464000
+        }
+      ],
+      "totalDebe": 464000,
+      "totalHaber": 464000,
+      "isBalanced": true,
+      "notes": "Transferencia comprobada con clave de rastreo SPEI 01218000",
+      "createdAt": "2026-09-02T10:15:00.000Z"
+    },
+    {
+      "id": "pol_02",
+      "clientId": "cli_01",
+      "number": "PD-2026-0902",
+      "date": "2026-09-05",
+      "type": "Egreso",
+      "concept": "Pago a proveedores de materia prima acerera y fletes",
+      "entries": [
+        {
+          "id": "pe_3",
+          "accountCode": "2101-01",
+          "accountName": "Proveedores Nacionales",
+          "concept": "Pago factura PROV-449",
+          "debe": 185600,
+          "haber": 0
+        },
+        {
+          "id": "pe_4",
+          "accountCode": "1102-01",
+          "accountName": "Bancos Nacionales (BBVA)",
+          "concept": "Transferencia bancaria egreso",
+          "debe": 0,
+          "haber": 185600
+        }
+      ],
+      "totalDebe": 185600,
+      "totalHaber": 185600,
+      "isBalanced": true,
+      "notes": "Descuento por pronto pago 3% aplicado",
+      "createdAt": "2026-09-05T14:20:00.000Z"
+    },
+    {
+      "id": "pol_03",
+      "clientId": "cli_01",
+      "number": "PD-2026-0903",
+      "date": "2026-09-15",
+      "type": "Diario",
+      "concept": "Provisión de nómina quincenal, IMSS e impuestos retenidos",
+      "entries": [
+        {
+          "id": "pe_5",
+          "accountCode": "6101-01",
+          "accountName": "Sueldos y Salarios Administrativos",
+          "concept": "Nómina 1ra Quincena Septiembre",
+          "debe": 145000,
+          "haber": 0
+        },
+        {
+          "id": "pe_6",
+          "accountCode": "6101-02",
+          "accountName": "Cuotas Patronales IMSS e Infonavit",
+          "concept": "Cargas de seguridad social",
+          "debe": 28500,
+          "haber": 0
+        },
+        {
+          "id": "pe_7",
+          "accountCode": "2103-01",
+          "accountName": "Retenciones de ISR por Sueldos",
+          "concept": "ISR retenido a colaboradores",
+          "debe": 0,
+          "haber": 19800
+        },
+        {
+          "id": "pe_8",
+          "accountCode": "2103-02",
+          "accountName": "Cuotas Obreras por Pagar",
+          "concept": "Retención cuota IMSS obrera",
+          "debe": 0,
+          "haber": 5200
+        },
+        {
+          "id": "pe_9",
+          "accountCode": "2105-01",
+          "accountName": "Sueldos por Pagar",
+          "concept": "Neto a dispersar a nómina",
+          "debe": 0,
+          "haber": 148500
+        }
+      ],
+      "totalDebe": 173500,
+      "totalHaber": 173500,
+      "isBalanced": true,
+      "notes": "Plantilla de 18 colaboradores calificados",
+      "createdAt": "2026-09-15T18:00:00.000Z"
+    },
+    {
+      "id": "pol_04",
+      "clientId": "cli_01",
+      "number": "PD-2026-0904",
+      "date": "2026-09-18",
+      "type": "Egreso",
+      "concept": "Pago provisional de impuestos SAT correspondiente a Agosto",
+      "entries": [
+        {
+          "id": "pe_10",
+          "accountCode": "2104-01",
+          "accountName": "Impuestos por Pagar (SAT)",
+          "concept": "Línea de captura SAT pagada",
+          "debe": 94200,
+          "haber": 0
+        },
+        {
+          "id": "pe_11",
+          "accountCode": "1102-01",
+          "accountName": "Bancos Nacionales (BBVA)",
+          "concept": "Cargo en cuenta fiscal",
+          "debe": 0,
+          "haber": 94200
+        }
+      ],
+      "totalDebe": 94200,
+      "totalHaber": 94200,
+      "isBalanced": true,
+      "notes": "Acuse de recibo y sello digital SAT verificado",
+      "createdAt": "2026-09-18T11:45:00.000Z"
+    }
+  ],
+  "bankAccounts": [
+    {
+      "id": "bank_01",
+      "clientId": "cli_01",
+      "bankName": "BBVA Bancomer",
+      "accountNumber": "•••• 4920",
+      "clabe": "012180004920881923",
+      "currency": "MXN",
+      "initialBalance": 1250000,
+      "currentBalance": 1434200,
+      "movements": [
+        {
+          "id": "bm_1",
+          "date": "2026-09-02",
+          "description": "SPEI RECIBIDO - INGENIERIA INDUSTRIAL",
+          "reference": "SPEI-88210",
+          "type": "deposito",
+          "amount": 464000,
+          "balanceAfter": 1714000,
+          "reconciled": true
+        },
+        {
+          "id": "bm_2",
+          "date": "2026-09-05",
+          "description": "SPEI ENVIADO - PROVEEDORES ACEROS",
+          "reference": "TRF-9021",
+          "type": "retiro",
+          "amount": 185600,
+          "balanceAfter": 1528400,
+          "reconciled": true
+        },
+        {
+          "id": "bm_3",
+          "date": "2026-09-18",
+          "description": "PAGO DE IMPUESTOS - SAT TESORERIA",
+          "reference": "LC-982194",
+          "type": "retiro",
+          "amount": 94200,
+          "balanceAfter": 1434200,
+          "reconciled": true
+        }
+      ]
+    },
+    {
+      "id": "bank_02",
+      "clientId": "cli_01",
+      "bankName": "Banorte Empresarial",
+      "accountNumber": "•••• 7183",
+      "clabe": "072180007183992014",
+      "currency": "MXN",
+      "initialBalance": 520000,
+      "currentBalance": 520000,
+      "movements": []
+    },
+    {
+      "id": "bank_1790393547369",
+      "clientId": "cli_1790393547369_j9wm",
+      "bankName": "BBVA Bancomer",
+      "accountNumber": "•••• 1024",
+      "clabe": "012180009141846951",
+      "currency": "MXN",
+      "initialBalance": 0,
+      "currentBalance": 0,
+      "movements": []
+    }
+  ],
+  "purchases": [],
+  "debts": [],
+  "invoices": [
+    {
+      "id": "inv_01",
+      "clientId": "cli_01",
+      "type": "Emitida",
+      "uuid": "A4C18D32-55E0-4E8A-9A21-0021FB8129C1",
+      "folio": "F-1082",
+      "partyRfc": "CMA140210U81",
+      "partyName": "Corporativo Manufacturero de América S.A.",
+      "date": "2026-09-01",
+      "dueDate": "2026-09-15",
+      "subtotal": 400000,
+      "taxIva": 64000,
+      "taxRetention": 0,
+      "total": 464000,
+      "paymentMethod": "PUE",
+      "status": "Cobrada",
+      "category": "Servicios Industriales"
+    },
+    {
+      "id": "inv_02",
+      "clientId": "cli_01",
+      "type": "Emitida",
+      "uuid": "7F90B11A-1249-417A-88EF-7B29AA183204",
+      "folio": "F-1083",
+      "partyRfc": "MTY980715H42",
+      "partyName": "Metalmecánica Monterrey S.A. de C.V.",
+      "date": "2026-09-10",
+      "dueDate": "2026-09-30",
+      "subtotal": 310000,
+      "taxIva": 49600,
+      "taxRetention": 0,
+      "total": 359600,
+      "paymentMethod": "PPD",
+      "status": "Vigente",
+      "category": "Maquinaria de Precisión"
+    },
+    {
+      "id": "inv_03",
+      "clientId": "cli_01",
+      "type": "Recibida",
+      "uuid": "3D2240EA-87CD-404B-9140-55A384BE9001",
+      "folio": "PRV-449",
+      "partyRfc": "ACN880312RA9",
+      "partyName": "Aceros y Perfiles del Norte S.A. de C.V.",
+      "date": "2026-09-04",
+      "dueDate": "2026-09-10",
+      "subtotal": 160000,
+      "taxIva": 25600,
+      "taxRetention": 0,
+      "total": 185600,
+      "paymentMethod": "PUE",
+      "status": "Pagada",
+      "category": "Materia Prima"
+    },
+    {
+      "id": "inv_04",
+      "clientId": "cli_01",
+      "type": "Recibida",
+      "uuid": "11B89AC3-6621-4E10-B149-D8401AA289B0",
+      "folio": "CFE-0926",
+      "partyRfc": "CSS160330CP7",
+      "partyName": "CFE Suministrador de Servicios Básicos",
+      "date": "2026-09-12",
+      "dueDate": "2026-09-28",
+      "subtotal": 32400,
+      "taxIva": 5184,
+      "taxRetention": 0,
+      "total": 37584,
+      "paymentMethod": "PPD",
+      "status": "Vigente",
+      "category": "Servicios de Energía"
+    }
+  ],
+  "deadlines": [
+    {
+      "id": "dl_01",
+      "clientId": "cli_01",
+      "title": "Declaración Pago Provisional ISR e IVA",
+      "description": "Presentación mensual y entero de retenciones correspondientes al mes anterior ante el SAT.",
+      "type": "SAT",
+      "dueDate": "2026-09-17",
+      "amount": 94200,
+      "status": "Presentada",
+      "priority": "Alta"
+    },
+    {
+      "id": "dl_02",
+      "clientId": "cli_01",
+      "title": "Declaración Informativa de Operaciones con Terceros (DIOT)",
+      "description": "Envío de información de proveedores y desglose del impuesto al valor agregado acreditable.",
+      "type": "DIOT",
+      "dueDate": "2026-09-30",
+      "status": "Pendiente",
+      "priority": "Alta"
+    },
+    {
+      "id": "dl_03",
+      "clientId": "cli_01",
+      "title": "Pago de Cuotas Obrero-Patronales IMSS (SUA / SIPARE)",
+      "description": "Emisión y liquidación mensual de aportaciones de seguridad social de los colaboradores.",
+      "type": "IMSS",
+      "dueDate": "2026-10-17",
+      "amount": 33700,
+      "status": "Pendiente",
+      "priority": "Media"
+    },
+    {
+      "id": "dl_04",
+      "clientId": "cli_01",
+      "title": "Vencimiento Factura Clave F-1083 (Metalmecánica)",
+      "description": "Fecha límite de cobranza convenida a 20 días con el cliente para mantener liquidez.",
+      "type": "Bancario",
+      "dueDate": "2026-09-30",
+      "amount": 359600,
+      "status": "Pendiente",
+      "priority": "Alta"
+    }
+  ],
+  "spreadsheets": {
+    "cli_01": {
+      "clientId": "cli_01",
+      "title": "Papel de Trabajo - Conciliación Fiscal & Flujo de Caja Septiembre 2026",
+      "updatedAt": "2026-09-25T19:00:00.000Z",
+      "cells": {
+        "A1": {
+          "value": "CONCILIACIÓN CONTABLE-FISCAL & PROYECCIÓN FINANCIERA",
+          "bold": true
+        },
+        "A3": {
+          "value": "Concepto / Rubro",
+          "bold": true
+        },
+        "B3": {
+          "value": "Importe Contable ($)",
+          "bold": true
+        },
+        "C3": {
+          "value": "Factor Fiscal",
+          "bold": true
+        },
+        "D3": {
+          "value": "Efecto Fiscal ($)",
+          "bold": true
+        },
+        "E3": {
+          "value": "Notas de Auditoría",
+          "bold": true
+        },
+        "A4": {
+          "value": "Ingresos Nominales Facturados"
+        },
+        "B4": {
+          "value": "823600",
+          "format": "currency"
+        },
+        "C4": {
+          "value": "1.00",
+          "format": "number"
+        },
+        "D4": {
+          "value": "823600",
+          "format": "currency"
+        },
+        "E4": {
+          "value": "Verificado vs CFDIs emitidos"
+        },
+        "A5": {
+          "value": "Costo de Ventas y Suministros"
+        },
+        "B5": {
+          "value": "298000",
+          "format": "currency"
+        },
+        "C5": {
+          "value": "1.00",
+          "format": "number"
+        },
+        "D5": {
+          "value": "298000",
+          "format": "currency"
+        },
+        "E5": {
+          "value": "Conforme a inventarios perpetuos"
+        },
+        "A6": {
+          "value": "Gastos de Operación y Nómina"
+        },
+        "B6": {
+          "value": "173500",
+          "format": "currency"
+        },
+        "C6": {
+          "value": "1.00",
+          "format": "number"
+        },
+        "D6": {
+          "value": "173500",
+          "format": "currency"
+        },
+        "E6": {
+          "value": "Timbrados en CFDI de Nómina"
+        },
+        "A7": {
+          "value": "Depreciación Contable de Activos"
+        },
+        "B7": {
+          "value": "28400",
+          "format": "currency"
+        },
+        "C7": {
+          "value": "0.00",
+          "format": "number"
+        },
+        "D7": {
+          "value": "0",
+          "format": "currency"
+        },
+        "E7": {
+          "value": "No deducible directamente (aplica deducción de inversiones)"
+        },
+        "A8": {
+          "value": "Deducción de Inversiones Fiscal"
+        },
+        "B8": {
+          "value": "0",
+          "format": "currency"
+        },
+        "C8": {
+          "value": "1.00",
+          "format": "number"
+        },
+        "D8": {
+          "value": "31500",
+          "format": "currency"
+        },
+        "E8": {
+          "value": "Calculado con INPC actualizado"
+        },
+        "A9": {
+          "value": "Utilidad Fiscal Estimada"
+        },
+        "B9": {
+          "value": "323700",
+          "format": "currency",
+          "bold": true
+        },
+        "C9": {
+          "value": "0.30",
+          "format": "percent"
+        },
+        "D9": {
+          "value": "320600",
+          "format": "currency",
+          "bold": true
+        },
+        "E9": {
+          "value": "Base gravable tentativa"
+        },
+        "A10": {
+          "value": "ISR Causado Estimado (30%)"
+        },
+        "B10": {
+          "value": "97110",
+          "format": "currency",
+          "bold": true
+        },
+        "C10": {
+          "value": "-",
+          "format": "text"
+        },
+        "D10": {
+          "value": "96180",
+          "format": "currency",
+          "bold": true
+        },
+        "E10": {
+          "value": "Provisión contable a registrar en póliza"
+        }
+      }
+    },
+    "cli_1790393260804": {
+      "clientId": "cli_1790393260804",
+      "title": "Papel de Trabajo - Mi Primer Cliente Demo",
+      "updatedAt": "2026-09-26T03:27:41.041Z",
+      "cells": {
+        "A1": {
+          "value": "HOJA DE CÁLCULO CONTABLE",
+          "bold": true
+        },
+        "A3": {
+          "value": "Partida / Subcuenta",
+          "bold": true
+        },
+        "B3": {
+          "value": "Importe ($)",
+          "bold": true
+        },
+        "C3": {
+          "value": "Tasa %",
+          "bold": true
+        },
+        "D3": {
+          "value": "Resultado ($)",
+          "bold": true
+        }
+      }
+    },
+    "cli_1790393547369_j9wm": {
+      "clientId": "cli_1790393547369_j9wm",
+      "title": "Papel de Trabajo - NovaTech",
+      "updatedAt": "2026-09-26T03:32:27.369Z",
+      "cells": {
+        "A1": {
+          "value": "HOJA DE TRABAJO CONTABLE Y AUDITORÍA",
+          "bold": true
+        },
+        "A3": {
+          "value": "Cuenta / Partida",
+          "bold": true
+        },
+        "B3": {
+          "value": "Saldo Inicial",
+          "bold": true
+        },
+        "C3": {
+          "value": "Cargos",
+          "bold": true
+        },
+        "D3": {
+          "value": "Abonos",
+          "bold": true
+        },
+        "E3": {
+          "value": "Saldo Final",
+          "bold": true
+        }
+      }
+    }
+  }
+}
