@@ -20,7 +20,24 @@ export const authStorage = {
   clearToken: () => localStorage.removeItem(TOKEN_KEY)
 };
 
+/**
+ * Configuración de cliente API para Vercel y entornos de producción.
+ * Utiliza estrictamente rutas relativas con baseURL: '/api' sin referencias a localhost.
+ */
+export const apiConfig = {
+  baseURL: '/api'
+};
+
+function formatEndpoint(endpoint: string): string {
+  const clean = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  if (clean.startsWith(apiConfig.baseURL)) {
+    return clean;
+  }
+  return `${apiConfig.baseURL}${clean}`;
+}
+
 async function fetchWithAuth(url: string, options: RequestInit = {}) {
+  const relativeUrl = formatEndpoint(url);
   const token = authStorage.getToken();
   const headers = new Headers(options.headers || {});
   headers.set('Content-Type', 'application/json');
@@ -28,7 +45,7 @@ async function fetchWithAuth(url: string, options: RequestInit = {}) {
     headers.set('Authorization', `Bearer ${token}`);
   }
 
-  const response = await fetch(url, { ...options, headers });
+  const response = await fetch(relativeUrl, { ...options, headers });
   const data = await response.json().catch(() => ({}));
 
   if (!response.ok) {
@@ -283,12 +300,12 @@ export const accountingApi = {
     return res.sheet;
   },
 
-  // Export URLs
+  // Export URLs (rutas relativas para Vercel y producción)
   getWordExportUrl(clientId: string): string {
-    return `/api/export/word/${clientId}`;
+    return `${apiConfig.baseURL}/export/word/${clientId}`;
   },
 
   getExcelExportUrl(clientId: string): string {
-    return `/api/export/excel/${clientId}`;
+    return `${apiConfig.baseURL}/export/excel/${clientId}`;
   }
 };

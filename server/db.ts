@@ -6,12 +6,20 @@ import bcrypt from 'bcryptjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DATA_DIR = path.resolve(__dirname, '../data');
+const isVercel = !!process.env.VERCEL;
+const DATA_DIR = isVercel
+  ? path.resolve('/tmp', 'data')
+  : path.resolve(__dirname, '../data');
 const DB_FILE = path.resolve(DATA_DIR, 'database.json');
+const BUNDLED_DB_FILE = path.resolve(__dirname, '../data/database.json');
 
 // Ensure data folder exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+try {
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+} catch (e) {
+  console.warn('Could not create DATA_DIR:', e);
 }
 
 export interface UserAccountant {
@@ -381,9 +389,15 @@ class Database {
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         const parsed = JSON.parse(raw);
-        // Ensure new collections exist for backwards compatibility
         if (!parsed.purchases) parsed.purchases = [];
         if (!parsed.debts) parsed.debts = [];
+        return parsed;
+      } else if (isVercel && fs.existsSync(BUNDLED_DB_FILE)) {
+        const raw = fs.readFileSync(BUNDLED_DB_FILE, 'utf-8');
+        const parsed = JSON.parse(raw);
+        if (!parsed.purchases) parsed.purchases = [];
+        if (!parsed.debts) parsed.debts = [];
+        this.save(parsed);
         return parsed;
       }
     } catch (err) {
